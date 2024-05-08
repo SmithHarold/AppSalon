@@ -1,0 +1,19 @@
+{
+    "name": "harol/app-salon_php_mvc_js_sass",
+    "description": "Proyecto MVC",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models"
+
+        }
+    },
+    "authors": [
+        {
+            "name": "Smith Harold Corales Flores",
+            "email": "smithharold2078@gmail.com"
+        }
+    ],
+    "require": {}
+}
