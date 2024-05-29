@@ -3,9 +3,10 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "MVC\\": "./",
+            "MVC\\" : "./",
             "Controllers\\": "./controllers",
-            "Model\\": "./models"
+            "Model\\" : "./models",
+            "Clases\\" : "./clases"
         }
     },
     "authors": [
@@ -14,5 +15,7 @@
             "email": "smithharold2078@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
 }
