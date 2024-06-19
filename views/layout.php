@@ -18,6 +18,11 @@
         </div>
     </div>
 
+    <?php
+        echo $script ?? ''; //si no hay variables de srcript imprime vacio
+    ?>
+
             
+    <!-- <link rel="stylesheet" href="build/js/app.js"> -->
 </body>
 </html>

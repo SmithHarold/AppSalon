@@ -57,7 +57,11 @@ class LoginController {
     }
 
     public static function logout() {
-        echo "Desde logout";
+        session_start();// Obtenemos los datos de la sesion
+
+        $_SESSION = []; // limpiamos los datos de la sesion con un arreglo vacio
+
+        header('Location: /'); // Finalmente enviamos al usuario a la pagina principal inicio de sesión
     }
 
     public static function olvide(Router $router) {
