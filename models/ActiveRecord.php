@@ -175,11 +175,17 @@ class ActiveRecord {
         return $resultado;
     }
 
-    // Busca un registro por su token
+    // Busca un registro por su token id
     public static function where($columna, $valor) {
         $query = "SELECT * FROM " . static::$tabla  ." WHERE $columna = '$valor'";
         $resultado = self::consultarSQL($query);
-        return array_shift( $resultado ) ;
+        return array_shift( $resultado ) ; // array_shift se trae el primero resultado del arreglo
+    }
+
+    // Consulta plana de SQL (Utilizar cuando los métodos del modelo no son suficientes)
+    public static function SQL($query) {
+        $resultado = self::consultarSQL($query);
+        return $resultado;
     }
 
 }

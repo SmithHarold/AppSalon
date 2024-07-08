@@ -22,6 +22,10 @@
         width: 95%;
         margin: 0 auto;
         padding: 3rem;
+
+        @include m.tablet {
+            overflow: scroll; // Barra deslisante
+        }
     }
 
 }
@@ -36,5 +40,18 @@
     .boton {
         @include m.boton(v.$negro, v.$blanco);
         margin: 0;
+    }
+}
+
+.barra-servicios {
+    margin-bottom: v.$separacion;
+
+    @include m.tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .boton {
+        margin: 0 0 1rem 0;
     }
 }
