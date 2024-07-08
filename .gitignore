@@ -1,6 +1,5 @@
 
 node_modules/
 anotaciones.txt
-package-lock.json
 /vendor/
 includes/.env
