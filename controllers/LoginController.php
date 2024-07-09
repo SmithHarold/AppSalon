@@ -48,7 +48,7 @@ class LoginController {
            
         }
 
-        $alertas =Usuario::getAlertas();
+        $alertas = Usuario::getAlertas();
 
         $router->render('auth/login', [
             'alertas' => $alertas,
@@ -131,7 +131,6 @@ class LoginController {
                 if($resultado) {
                     header('Location: /');
                 }
-                
             }
         }
 
@@ -179,10 +178,7 @@ class LoginController {
                     if($resultado) {
                         header('Location: /mensaje');
                     }
-                    // debuguear($usuario);
-                    //si no esta registrado
-                    
-                    
+        
                 }
             }
 
