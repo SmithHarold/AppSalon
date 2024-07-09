@@ -4,9 +4,10 @@
     <a class="boton" href="/logout">Cerrar Sesión</a> 
 </div>
 
-<h1 class="nombre-pagina">Panel de Administración</h1>
+
 
 <?php if(isset($_SESSION['admin'])) { ?>
+ <h1 class="nombre-pagina">Panel de Administración</h1>
  <div class="barra-servicios">
     <a href="/admin" class="boton">Ver Citas</a>
     <a href="/servicios" class="boton">Ver Servicios</a>
