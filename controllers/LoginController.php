@@ -119,7 +119,7 @@ class LoginController {
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             // leer el nuevo password y guardarlo
             $password = new Usuario($_POST);
-            $password->validarPassword();
+            $alertas = $password->validarPassword();
 
             if(empty($alertas)) {
                 $usuario->password = null; //elimina el password anterior
@@ -131,7 +131,7 @@ class LoginController {
                 if($resultado) {
                     header('Location: /');
                 }
-                debuguear($usuario);
+                
             }
         }
 
