@@ -1,7 +1,7 @@
+
 <?php 
     include_once __DIR__ . '/../templates/barra.php';
 ?>
-
 
 <h3>Buscar Citas</h2>
 <div class="busqueda">

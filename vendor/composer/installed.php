@@ -3,7 +3,7 @@
         'name' => 'harol/app-salon_php_mvc_js_sass',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '92ab133f4bb65394b1e4eb3edf107e907ff34ba0',
+        'reference' => 'd9c955cc88a8e9ffbb12f8a0b0ed5a6c060b9d43',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'harol/app-salon_php_mvc_js_sass' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '92ab133f4bb65394b1e4eb3edf107e907ff34ba0',
+            'reference' => 'd9c955cc88a8e9ffbb12f8a0b0ed5a6c060b9d43',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
