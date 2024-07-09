@@ -58,7 +58,7 @@ class ServicioController {
         $id = $_GET['id'];
         if(!is_numeric($id)) return;
 
-        $servicio = Servicio::find($id); // busca en la BD el servicio por su id
+        $servicio = Servicio::find($_GET['id']); // busca en la BD el servicio por su id
         // debuguear($servicio);
         $alertas = [];  
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
