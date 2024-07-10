@@ -11,6 +11,7 @@ class AdminController {
         session_start();
 
         isAdmin(); // comprueba si el usuario es admin
+        date_default_timezone_set('America/Lima');
         
         $fecha = $_GET['fecha'] ?? date('Y-m-d'); // si no hay ninguna fecha seleccionada muestra la fecha del servidor(hoy)
         $fechas = explode('-', $fecha); //explode separa una cadena de string
