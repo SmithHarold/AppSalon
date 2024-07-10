@@ -6,6 +6,7 @@
     <title>App Salón</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="icon" type="image/png" href="/build/img/icon.png">
 </head>
 <body>
     <div class="contenedor-app">
@@ -24,5 +25,15 @@
 
             
     <!-- <link rel="stylesheet" href="build/js/app.js"> -->
+  
+    <footer class="footer">
+        <?php
+            $mesIngles = date('F');
+            $mesEspañol = traducirMes($mesIngles);
+            $anio = date('Y');
+        ?>
+        <p class="copyright">Developed by: Smith Harold Corales. Todos los derechos reservados <?php echo $mesEspañol . ' del ' . $anio; ?> &copy;</p>
+    </footer>
 </body>
+
 </html>
